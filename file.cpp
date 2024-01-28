@@ -13,3 +13,15 @@ class Door {
  		bool isDoorOpen() const;
 		bool isDoorlocked() const;
 	};
+	
+	void Door::openDoor() {
+    		if (!isLocked) {
+       		 isopen = true;
+       		 cout << "Door is now open." << endl;
+    } else {
+        	cout << "Cannot open the door. It is locked." << endl;
+    }
+	}
+	bool Door::isDoorOpen() const {
+    return isopen;
+}
